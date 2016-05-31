@@ -4,6 +4,20 @@
   "description": "Redux Todos example",
   "scripts": {
     "start": "../../node_modules/.bin/babel-node devServer.js",
-    "lint": "../../node_modules/.bin/eslint src"
+    "lint": "../../node_modules/.bin/eslint src",
+    "test": "../../node_modules/.bin/ava",
+    "test:watch": "npm run test -- --watch"
+  },
+  "ava": {
+    "babel": "inherit",
+    "files": [
+      "**/*-test.js"
+    ],
+    "source": [
+      "**/*.js"
+    ],
+    "require": [
+      "babel-register"
+    ]
   }
 }
