@@ -1,14 +1,14 @@
 import { createStore, applyMiddleware } from 'redux';
 import todoApp from './reducers';
 
-const promise = () => next => action => {
+export const promise = () => next => action => {
   if (typeof action.then === 'function') {
     return action.then(next);
   }
   return next(action);
 };
 
-const logger = store => next => action => {
+export const logger = store => next => action => {
   console.group(action.type);
   console.log('%c prev state', 'color:gray', store.getState());
   console.log('%c action', 'color:blue', action);
