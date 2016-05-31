@@ -1,0 +1,9 @@
+{
+  "name": "redux-todos-example",
+  "version": "0.0.0",
+  "description": "Redux Todos example",
+  "scripts": {
+    "start": "../../node_modules/.bin/babel-node devServer.js",
+    "lint": "../../node_modules/.bin/eslint src"
+  }
+}
