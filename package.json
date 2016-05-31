@@ -29,6 +29,7 @@
     "eslint-plugin-jsx-a11y": "^1.0.4",
     "eslint-plugin-react": "^5.0.1",
     "express": "^4.13.3",
+    "is-subset": "^0.1.1",
     "webpack": "^1.9.11",
     "webpack-dev-middleware": "^1.2.0"
   }
