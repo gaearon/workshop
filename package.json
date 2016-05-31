@@ -2,10 +2,6 @@
   "name": "redux-todos-example",
   "version": "0.0.0",
   "description": "Redux Todos example",
-  "scripts": {
-    "start": "babel-node devServer.js",
-    "lint": "eslint src"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gaearon/todos.git"
