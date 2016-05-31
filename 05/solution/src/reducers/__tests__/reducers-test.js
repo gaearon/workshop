@@ -1,6 +1,12 @@
 import test from 'ava';
 import todos, { getVisibleTodos } from '../';
 
+test('top-level state object has `byId` and `allIds`', t => {
+  const state = todos(undefined, {});
+  t.true(state.hasOwnProperty('byId'));
+  t.true(state.hasOwnProperty('allIds'));
+});
+
 test('getVisibleTodos selects todos using given filter', t => {
   const state = [
     {},
