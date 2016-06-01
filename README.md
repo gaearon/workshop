@@ -52,19 +52,4 @@ Verify that everything works by running
 git clone https://github.com/gaearon/workshop.git
 cd workshop
 npm install
-npm start
 ```
-
-You should be able to open http://localhost:3000/ and see a small todo app there:
-
-<img src='http://i.imgur.com/tMwejKe.png' width='300'>
-
-Everybody loves todo lists, amiright?
-
-As a bonus, you can also try running the linter:
-
-```
-npm run lint
-```
-
-It should produce empty output because we have no lint errors yet.
