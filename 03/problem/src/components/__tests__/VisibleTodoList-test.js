@@ -1,6 +1,5 @@
 import test from 'ava';
-import { mapStateToProps, mapDispatchToProps } from '../VisibleTodoList';
-import sinon from 'sinon';
+import { mapStateToProps } from '../VisibleTodoList';
 
 test('mapStateToProps filters todos using `ownProps.params.filter`', t => {
   const state = {
@@ -27,11 +26,4 @@ test('mapStateToProps filters todos using `ownProps.params.filter`', t => {
       .todos.map(o => o.id),
     [2]
   );
-});
-
-test('mapDispatchToProps returns `onTodoClick` function', t => {
-  const dispatch = sinon.spy();
-  const { onTodoClick } = mapDispatchToProps(dispatch);
-  onTodoClick('123');
-  t.deepEqual(dispatch.args[0][0], { type: 'TOGGLE_TODO', id: '123' });
 });
