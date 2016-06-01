@@ -1,11 +1,8 @@
 # 03. Combining Redux and React Router State
 
-Before: Clicking a filter link does not update the current route, and vice versa.
+Before: The filter links update the route, but do not update the UI.
 
-- Use React Router's `<Link>` component instead of our custom `<Link>`.
-- Use `withRouter` to inject router props into `<VisibleTodoList>`.
+- Remove the `visibilityFilter` reducer and corresponding actions. We will no longer track this using Redux.
 - Use `params` props inside `mapPropsToState` to get current filter.
-- Remove the `visibilityFilter` reducer and corresponding actions.
-- Update `getVisibleTodos` constants to match router params.
 
-After: Clicking a filter link *does* update the current route, and vice versa.
+After: The UI respects the filter specified in the route.
