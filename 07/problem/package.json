@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "description": "Redux Todos example",
   "scripts": {
-    "start": "../../node_modules/.bin/babel-node devServer.js",
-    "lint": "../../node_modules/.bin/eslint src",
-    "test": "../../node_modules/.bin/ava --timeout=3s",
+    "start": "\"..\\..\\node_modules\\.bin\\babel-node\" devServer.js",
+    "lint": "\"..\\..\\node_modules\\.bin\\eslint\" src",
+    "test": "\"..\\..\\node_modules\\.bin\\ava\" --timeout=3s",
     "test:watch": "npm run test -- --watch"
   },
   "ava": {

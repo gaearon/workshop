@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "description": "Redux Todos example",
   "scripts": {
-    "start": "../../node_modules/.bin/babel-node devServer.js",
-    "lint": "../../node_modules/.bin/eslint src",
+    "start": "\"..\\..\\node_modules\\.bin\\babel-node\" devServer.js",
+    "lint": "\"..\\..\\node_modules\\.bin\\eslint\" src",
     "test": "echo 'Please open http://localhost:3000 in your browser as there are no automated tests in this exercise.'",
     "test:watch": "npm run test -- --watch"
   },
