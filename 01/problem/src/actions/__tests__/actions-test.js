@@ -1,6 +1,6 @@
 import test from 'ava';
 import isSubset from 'is-subset';
-import { addTodo, setVisibilityFilter, toggleTodo } from '../';
+import { addTodo, toggleTodo } from '../';
 
 test('addTodo creates actions with text', t => {
   t.true(isSubset(addTodo('Write action creators'), {
